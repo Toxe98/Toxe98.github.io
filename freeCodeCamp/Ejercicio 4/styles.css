@@ -85,11 +85,10 @@ section{
 }
 
 h2{
-
-    display: flex;
+    text-align: center;
     font-family: "fraunces";
     margin: 20px;
-
+    
 }
 
 .icon{
@@ -98,21 +97,26 @@ h2{
 }
 
 #features{
-    text-align: left;
+    text-align: center;
     max-width: 800px;
     margin: auto;
+    display: flex;
 }
 
 .feature {
     display: flex;
+   flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 20px;
+    text-align: center;
+    margin: auto;
     font-family: "montserrat";
+    
+    
 }
 
 #video{
     width: 100%;
+    
 }
 
 .product-image{
@@ -167,7 +171,6 @@ h2{
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-
 }
 
 .main-price {
@@ -242,7 +245,7 @@ h2{
 
 @media only screen and (width >= 1000px){
     #video{
-        width: 70%;
+        width: 50%;
     }
     .product-cards{
         display: flex;
@@ -250,3 +253,4 @@ h2{
         flex-wrap: wrap;
     }
 }
+
