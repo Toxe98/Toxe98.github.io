@@ -86,7 +86,7 @@ section {
 }
 
 #welcome-section h1 {
-    color: var(--base);
+    color: var(--tertiary);
     margin-top: 10vh;
 }
 #welcome-section h1:hover {
@@ -97,14 +97,12 @@ section {
     margin: 25px 0;
     font-style: italic;
 }
-#welcome-section p:hover{
-    color: var(--highlight);
-}
+
 
 #about-section {  
     max-width: 400px;
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
    
 }
