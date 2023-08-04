@@ -38,9 +38,9 @@ h1{
     top: 0;
     width: 100%;
     padding: 15px 0;
-    background-color: var(--accent);
+    background-color: var(--tertiary);
     font-size: 20px;
-    border-bottom: 1px solid var(--base);
+    border-bottom: 1px solid var(--highlight);
 }
     /*-- Llamo a las clases y etiquetas a para darles estilos --*/
     
@@ -60,7 +60,7 @@ h1{
 
 .nav-links a:hover{
     text-decoration: underline;
-    color: var(--tertiary);
+    color: var(--highlight);
 }
    /*-- Aqui llamo a la seccion para darle un padding y una altura minima de viewport --*/
 section {
@@ -69,7 +69,7 @@ section {
 }
             /*-- Llamo a la seccion de bienvenida y etiquetas para darles estilos diferentes --*/
 #welcome-section{
-    background-color: var(--neutral-focus);
+    background-color: var(--secondary);
     color: var(--base);
     flex-direction: column;
 }
