@@ -263,7 +263,7 @@ footer{
     }
     #projects .project-tile{
         height: 600px;
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -284,7 +284,7 @@ footer{
     view-time-line-axis:block;
     animation-timeline: --image;
     animation-name: show;
-
+    scroll-behavior: smooth;
     animation-range: entry 25% cover 30%;
     animation-fill-mode: both;
 }
