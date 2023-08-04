@@ -45,7 +45,7 @@ h1{
     /*-- Llamo a las clases y etiquetas a para darles estilos --*/
     
 
-    .nav-links{
+.nav-links{
     display: flex;
     list-style: none;
     font-family: serif;
@@ -77,8 +77,7 @@ section {
 .welcome-img {
     border-radius: 15px;
     transform: translateY(30px);
-    margin: auto;
-    width: 200px;
+    margin: auto; 
     float: center;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -87,14 +86,13 @@ section {
 }
 
 #welcome-section h1 {
-    color: var(--tertiary);
+    color: var(--base);
     margin-top: 10vh;
 }
 #welcome-section h1:hover {
     color: var(--highlight);
 }
 #welcome-section p{ 
-    color: var(--tertiary);
     font-size: 20px;
     margin: 25px 0;
     font-style: italic;
@@ -213,7 +211,7 @@ section {
             /*-- Contactos --*/
 #contact{
     background-color: var(--neutral);
-    color: var(--base-100);
+    color: var(--tertiary);
 }
 
 #contact h1 {
