@@ -69,9 +69,8 @@ section {
 }
             /*-- Llamo a la seccion de bienvenida y etiquetas para darles estilos diferentes --*/
 #welcome-section{
-    background-color: rgba(255, 255, 255, 0.918);
+    background-color:var(--accent);
     color: var(--base);
-    flex-direction: column;
 }
 
 .welcome-img {
@@ -157,8 +156,8 @@ section {
 }
 
 #projects .project-tile img {
-    height: 65%;
-    width: 85%;
+    height: 60%;
+    width: 80%;
 }
 
 #projects .project-tile p {
