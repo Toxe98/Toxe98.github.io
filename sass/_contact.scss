@@ -1,0 +1,40 @@
+@use 'color';
+
+#contact{
+    background-color: color.$neutral;
+    color: color.$tertiary;
+}
+
+#contact h1 {
+    margin-top: 200px;
+
+}
+
+
+#contact .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#contact .social-media {
+    text-decoration: none;
+    color: color.$secondary;
+    transition: transform 0.1s ease-in;
+    -webkit-transition: transform 0.1s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    -moz-transition: transform 0.1s ease-in;
+    -ms-transition: transform 0.1s ease-in;
+    -o-transition: transform 0.1s ease-in;
+}
+
+#contact .social-media:hover{
+    color: color.$tertiary;
+}
+

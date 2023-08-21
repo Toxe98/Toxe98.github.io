@@ -1,0 +1,67 @@
+@use 'cuerpo';
+@use 'navbar';
+@use 'color';
+@use 'welcome_section';
+@use 'about';
+@use 'projects';
+@use 'contact';
+
+h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 50px;
+}
+h4{ 
+    color: color.$tertiary;
+    margin-top: 40px;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+
+@media only screen and (width < 700px){
+    h1 {
+        font-size: 50px;
+    }
+    p{  
+        font-size: 35px;
+    }
+    #projects .project-tile{
+        height: 400px;
+        width: 100%;
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+
+}
+
+#projects .project-tile img {
+    view-timeline-name: --image;
+    view-time-line-axis:block;
+    animation-timeline: --image;
+    animation-name: show;
+    scroll-behavior: smooth;
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+
+
+/*-- Pie de pagina --*/
+footer{
+    border-top: 3px solid color.$highlight;
+    color: color.$base;
+    font-size: 20px;
+    padding: 20px;
+} 
+        /*--  --*/

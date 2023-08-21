@@ -1,0 +1,13 @@
+@use 'color';
+
+*{
+    margin: 0;
+    scroll-behavior:smooth;
+}
+
+body {
+    font-family: "Noto Serif", sans-serif;
+    text-align: center;
+    background-color: color.$neutral;
+}
+

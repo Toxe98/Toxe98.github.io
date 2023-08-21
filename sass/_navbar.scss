@@ -1,0 +1,35 @@
+@use 'color';
+
+#navbar {
+
+    background-color: color.$tertiary;
+    border-bottom: 1px solid color.$neutral-focus;
+}
+#navbar{
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    font-family: serif;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: color.$base;
+    padding: 0 10px;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    color: color.$highlight;
+}
+

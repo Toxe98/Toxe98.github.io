@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/style.css" class="css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -23,38 +23,51 @@
     </header>
     <section id="welcome-section"> <!--Sección de bienvenida básica-->
         <img src="./img/toxe-02.webp" alt="fotoperfil" class="welcome-img" loading="lazy" width="200" height="200"> 
-        <h1>Hello, I'm Agustin Bertolotti</h1>
+         <h1>Hello, I'm Agustin Bertolotti</h1>
+         <div>
+            <h4>About me:</h4>
+            <p> 
+                Since I was child, I had access to a computer. At first, I was only interested in hardware, where I learn to assemble and disassemble computers.
+                As I grew, I became intrigued by learning web programming.
+            </p>
+            <p>
+                At this moment i learned: HTML, CSS, and JavaScript
+            </p>
+            <p>
+                Git and GitHub
+            </p>
+            <p>
+                Sass
+            </p>
+        </div>
         <div id="about-section">  
-            <p>About me: </p>
-            <p>Since I was a child, I have always had access to a computer. At first, I was only interested in hardware, where I would assemble and disassemble computers, and of course, 
-                I loved playing video games. As I grew older, I became intrigued by learning web programming, specifically web development. 
-                I also enjoy being self-taught and learning new things.</p>
+            <h4>Contact me:</h4>
+            <div class="social-medias"> 
+                <a href="https://github.com/Toxe98" target="_blank" class="social-media" id="profile-link">
+                    <i class="ri-github-fill ri-2x"></i>
+                    <p>GitHub</p>
+                </a>
+                <a href="https://www.freecodecamp.org/Toxe" target="_blank" class="social-media">
+                    <i class="ri-fire-fill ri-2x"></i>
+                    <p>FreeCodeCamp</p>
+                </a>
+                <a href="https://www.linkedin.com/in/agust%C3%ADn-bertolotti-3b581a244/>" target="_blank" class="social-media">
+                    <i class="ri-linkedin-box-fill ri-2x"></i>
+                    <p>Linkedin</p>
+                </a>
+                <a href="mailto:Agustinbertolotti@gmail.com" target="_blank" class="social-media">
+                    <i class="ri-mail-line ri-2x"></i>
+                    <p>Send me an e-mail</p>
+                </a>
+            </div>  
         </div>
     </section>
     <section id="projects"><!--Sección en un div contenedor de proyectos con imágenes de ellas -->
         <h1>These are some of my projects</h1>
         <div class="projects">
-        <a href="https://building-a-skyline-ownfmld7m-toxe98.vercel.app/" class="project-tile">
-            <img src="./img/skyline-night.webp" alt="skyline" loading="lazy">
-            <p><span>&lt;</span>Building a Skyline<span>/&gt;</span></p>
-            
-        </a>
-        
-        <a href="https://elon-musk-tribute-page-70j3wtqmw-toxe98.vercel.app/" class="project-tile">
-            <img src="./img/tribute-page.webp" alt="tributePage" loading="lazy">
-            <p><span>&lt;</span>Elon Musk Tribute Page<span>/&gt;</span></p>
-            
-        </a>
-
-        <a href="https://library-js-documentation.vercel.app/" class="project-tile">
-            <img src="./img/JS Documentation.webp" alt="Documentation" loading="lazy">
-            <p><span>&lt;</span>JavaScript Documentation<span>/&gt;</span></p>
-            
-        </a>
-
-        <a href="https://fcc-landing-page-ten.vercel.app/" class="project-tile">
-            <img src="./img/basic-landing-page.webp" alt="landingPage" loading="lazy">
-            <p><span>&lt;</span>Product Landing Page<span>/&gt;</span></p>
+        <a href="https://64e140006eefb60e3d0cf978--effortless-youtiao-313154.netlify.app/" class="project-tile">
+            <img src="./img/tesla-landing.avif" alt="Tesla Landing" loading="lazy">
+            <p><span>&lt;</span>Tesla Landing Page<span>/&gt;</span></p>
             
         </a>
 
@@ -62,34 +75,14 @@
             <img src="./img/random-quote.webp" alt="randomQuote" loading="lazy">
             <p><span>&lt;</span>Random Quote Machine<span>/&gt;</span></p>
             
-        </a>
-
-        <a href="https://markdown-previewer-eta-nine.vercel.app/" class="project-tile">
-            <img src="./img/markdown-previewer.webp" alt="markdownPreviewer" loading="lazy">
-            <p><span>&lt;</span>Markdown Previewer<span>/&gt;</span></p>
-            
-        </a>
-
-        <a href="https://calculator-peach-eta.vercel.app/" class="project-tile">
+        </a><a href="https://calculator-peach-eta.vercel.app/" class="project-tile">
             <img src="./img/calculator.webp" alt="calculator" loading="lazy">
             <p><span>&lt;</span>Calculator<span>/&gt;</span></p>
            
         </a>
-
-        <a href="https://drum-machine-orpin.vercel.app/" class="project-tile">
-            <img src="./img/drum-machine.webp" alt="drumMachine" loading="lazy">
-            <p><span>&lt;</span>Drum-Machine<span>/&gt;</span></p>
-           
-        </a>
-
-        <a href="https://25-5-clock-navy.vercel.app/" class="project-tile">
-            <img src="./img/25-5clock.webp" alt="clock" loading="lazy">
-            <p><span>&lt;</span>25 + 5 Clock<span>/&gt;</span></p>
-            
-        </a>
     </div>
     <a href="https://github.com/Toxe98" class="show-all">
-        Show all GitHub Repository<i class="ri-arrow-right-s-line ri-2x"></i>
+        All my repository<i class="ri-arrow-right-s-line ri-2x"></i>
     </a>
     </section>
     <section id="contact"><!--Sección de contactos division a con links de vinculación a mis redes sociales-->
