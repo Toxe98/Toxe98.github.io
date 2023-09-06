@@ -1,114 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><!--Títulos como vinculaciones de fuentes, css, JS y más-->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" class="css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="./img/toxe-01.webp">
-</head>
-<body>
-    <header> <!--header con nav-bar con secciones-->
-        <nav id="navbar">
-            <ul class="nav-links">
-                <li><a href="#welcome-section" class="nav-link">Welcome</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="welcome-section"> <!--Sección de bienvenida básica-->
-        <img src="./img/toxe-02.webp" alt="fotoperfil" class="welcome-img" loading="lazy" width="200" height="200"> 
-         <h1>Hello, I'm Agustin Bertolotti</h1>
-         <div>
-            <h4>About me:</h4>
-            <p> 
-                Since I was child, I had access to a computer. At first, I was only interested in hardware, where I learn to assemble and disassemble computers.
-                As I grew, I became intrigued by learning web programming.
-            </p>
-            <p>
-                At this moment i learned: HTML, CSS, and JavaScript
-            </p>
-            <p>
-                Git and GitHub
-            </p>
-            <p>
-                Sass
-            </p>
-        </div>
-        <div id="about-section">  
-            <h4>Contact me:</h4>
-            <div class="social-medias"> 
-                <a href="https://github.com/Toxe98" target="_blank" class="social-media" id="profile-link">
-                    <i class="ri-github-fill ri-2x"></i>
-                    <p>GitHub</p>
-                </a>
-                <a href="https://www.freecodecamp.org/Toxe" target="_blank" class="social-media">
-                    <i class="ri-fire-fill ri-2x"></i>
-                    <p>FreeCodeCamp</p>
-                </a>
-                <a href="https://www.linkedin.com/in/agust%C3%ADn-bertolotti-3b581a244/>" target="_blank" class="social-media">
-                    <i class="ri-linkedin-box-fill ri-2x"></i>
-                    <p>Linkedin</p>
-                </a>
-                <a href="mailto:Agustinbertolotti@gmail.com" target="_blank" class="social-media">
-                    <i class="ri-mail-line ri-2x"></i>
-                    <p>Send me an e-mail</p>
-                </a>
-            </div>  
-        </div>
-    </section>
-    <section id="projects"><!--Sección en un div contenedor de proyectos con imágenes de ellas -->
-        <h1>These are some of my projects</h1>
-        <div class="projects">
-        <a href="https://64e140006eefb60e3d0cf978--effortless-youtiao-313154.netlify.app/" class="project-tile">
-            <img src="./img/tesla-landing.avif" alt="Tesla Landing" loading="lazy">
-            <p><span>&lt;</span>Tesla Landing Page<span>/&gt;</span></p>
-            
-        </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" class="css" />
+    <link rel="stylesheet" href="./css/mediaqueries.css" class="css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Agustin Bertolotti</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+        </ul>
+      </div>
+    </nav>
 
-        <a href="https://random-quote-machine-pi.vercel.app/" class="project-tile">
-            <img src="./img/random-quote.webp" alt="randomQuote" loading="lazy">
-            <p><span>&lt;</span>Random Quote Machine<span>/&gt;</span></p>
-            
-        </a><a href="https://calculator-peach-eta.vercel.app/" class="project-tile">
-            <img src="./img/calculator.webp" alt="calculator" loading="lazy">
-            <p><span>&lt;</span>Calculator<span>/&gt;</span></p>
-           
-        </a>
-    </div>
-    <a href="https://github.com/Toxe98" class="show-all">
-        All my repository<i class="ri-arrow-right-s-line ri-2x"></i>
-    </a>
-    </section>
-    <section id="contact"><!--Sección de contactos division a con links de vinculación a mis redes sociales-->
-        <h1>Let's work together...</h1>
-        <div class="social-medias">
-            <a href="https://github.com/Toxe98" target="_blank" class="social-media" id="profile-link">
-                <i class="ri-github-fill ri-2x"></i>
-                <p>GitHub</p>
-            </a>
-            <a href="https://www.freecodecamp.org/Toxe" target="_blank" class="social-media">
-                <i class="ri-fire-fill ri-2x"></i>
-                <p>FreeCodeCamp</p>
-            </a>
-            <a href="https://www.linkedin.com/in/agust%C3%ADn-bertolotti-3b581a244/>" target="_blank" class="social-media">
-                <i class="ri-linkedin-box-fill ri-2x"></i>
-                <p>Linkedin</p>
-            </a>
-            <a href="mailto:Agustinbertolotti@gmail.com" target="_blank" class="social-media">
-                <i class="ri-mail-line ri-2x"></i>
-                <p>Send me an e-mail</p>
-            </a>
+    <nav id="hamburger-nav">
+      <div class="logo">Agustin Bertolotti</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contacts</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile.jpeg"
+          alt="Agustin Bertolotti profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Agustin Bertolotti</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV IT-Agustin Bertolotti.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contacts'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedin Profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/agustín-bertolotti'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Toxe98'"
+          />
+        </div>
+      </div>
     </section>
-    <footer><!--Pie de página con el nombre del creador y año-->
-        Created By Agustin Bertolotti 2023
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Toxe-01.webp"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Currently i'm studying <br />Frontend Developer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Currently i'm studying <br />Bachelor</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am currently interested in progressing and improving my quality
+              life. I discovered the world of programming, which has piqued my
+              interest ever since I was a child. I had the opportunity to have a
+              computer at home, and my initial experiences revolved around
+              hardware, including building and disassembling computers. I hold a
+              certificate and have experience in this field. As I grew, I became
+              self-taught and delved into programming. In 2023, I seized the
+              opportunity to formally study programming, and I have found that
+              my soft skills have been improving alongside my web development
+              learning journey.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/double-arrow-down-512.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Sass</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/double-arrow-down-512.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/tesla-landing.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Toxe98/landing-tesla'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://64e140006eefb60e3d0cf978--effortless-youtiao-313154.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/calculator.webp"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Toxe98/calculator'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://calculator-toxe98.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./img/random-quote.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Toxe98/random-quote-machine'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://random-quote-machine-pi.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/double-arrow-down-512.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contacts'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Agustinbertolotti@gmail.com">Agustinbertolotti@gmail.com</a></p>
+        </div>
+      
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="linkedin icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/agustín-bertolotti">LinkedIn</a></p>
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer >
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Agustin Bertolotti, All Rights Reserved.</p>
     </footer>
-    
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
